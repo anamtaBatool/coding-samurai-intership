@@ -1,0 +1,147 @@
+body {
+    background: #e2acac;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: block;
+    width: 400px;
+    margin: 100px auto 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li * {
+    float: left;
+}
+
+li,
+h3 {
+    clear: both;
+    list-style: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
+button {
+    background: #67c1eb;
+    border: 0px;
+    color: #fff;
+    font-size: 18px; /* Increased font size */
+    width: 60px;
+    margin: 10px 0 0;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* Heading */
+h3,
+label[for='new-task'] {
+    color: #333;
+    font-weight: 700;
+    font-size: 20px; /* Increased font size */
+    border-bottom: 2px solid #333;
+    padding: 20px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    margin: 0;
+    font-size: 18px; /* Increased font size */
+    line-height: 24px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    color: #555;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #0FC57C;
+}
+
+/* New Task */
+label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+    font-weight: 600;
+    font-size: 18px; /* Increased font size */
+}
+
+input#new-task {
+    float: left;
+    width: 318px;
+}
+
+p > button:hover {
+    color: #0FC57C;
+}
+
+/* Task list */
+li {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 5px;
+}
+
+li > label {
+    font-size: 20px; /* Increased font size */
+    line-height: 40px;
+    width: 237px;
+    padding: 0 0 0 11px;
+    color: #333;
+}
+
+li >  input[type="text"] {
+    width: 226px;
+}
+
+li > .delete:hover {
+    color: #CF2323;
+}
+
+/* Completed */
+#completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+    display:none;
+}
+
+ul li.editMode input[type=text] {
+    display:block;
+}
+
+ul li.editMode label {
+    display:none;
+}
